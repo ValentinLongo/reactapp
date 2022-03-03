@@ -1,5 +1,4 @@
 import './App.module.css';
-import { MoviesGrid } from './MoviesGrid';
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +18,7 @@ export function App() {
         <main>
           <Routes>
             <Route path='/' element={<LandingPage/>} />
-            <Route path='/movies/:MoviesID' element={<MovieDetails/>} />
+            <Route path='/movies/:movieId' element={<MovieDetails/>} />
           </Routes>
         </main>
     </Router>
